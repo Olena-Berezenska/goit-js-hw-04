@@ -9,8 +9,9 @@ function calcAverageCalories(days) {
     for (const day of days) {
         totalCalories += day.calories; 
     }
-    return totalCalories / 7;
-}
+    AvarageCalories = totalCalories / days.length;
+    return isNaN(AvarageCalories) ? 0 : AvarageCalories;
+    }
 
 
 console.log(
